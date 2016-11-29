@@ -969,13 +969,6 @@ interface SVGHatchElement : SVGElement {
 interface SVGHatchpathElement : SVGElement {
 };
 
-interface SVGCursorElement : SVGElement {
-  [SameObject] readonly attribute SVGAnimatedLength x;
-  [SameObject] readonly attribute SVGAnimatedLength y;
-};
-
-SVGCursorElement implements SVGURIReference;
-
 interface SVGScriptElement : SVGElement {
   attribute DOMString type;
   attribute DOMString crossOrigin;
@@ -1509,7 +1502,6 @@ idlArray.add_objects({
   SVGPatternElement: ['pattern'],
   SVGClipPathElement: ['clipPath'],
   SVGMaskElement: ['mask'],
-  SVGCursorElement: ['cursor'],
   SVGAElement: ['a'],
   SVGViewElement: ['view'],
   SVGScriptElement: ['script'],
